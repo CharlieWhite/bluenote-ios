@@ -5,28 +5,18 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-<<<<<<< HEAD
-	<string>AC528D84-2D3C-498A-9276-CEA0C8D675BE</string>
-=======
-	<string>ACCE7162-5475-4C27-AD00-8A1B4A925CDB</string>
->>>>>>> 02e4e9ffa911c1255cb0de600e91461c9e97b9b1
+	<string>ADA7DD40-3D59-4997-93B6-3EE450D2F3C2</string>
 	<key>IDESourceControlProjectName</key>
 	<string>bluenote-ios</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-<<<<<<< HEAD
 		<key>30207EC1-A19B-40B8-8715-3E8EB614B2A6</key>
 		<string>https://github.com/CharlieWhite/bluenote-ios</string>
-=======
-		<key>D9DF2F2C-D537-4881-B94B-17F4A334A70C</key>
-		<string>https://github.com/CharlieWhite/bluenote-ios.git</string>
->>>>>>> 02e4e9ffa911c1255cb0de600e91461c9e97b9b1
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>bluenote-ios.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-<<<<<<< HEAD
 		<key>30207EC1-A19B-40B8-8715-3E8EB614B2A6</key>
 		<string>..</string>
 	</dict>
@@ -36,28 +26,13 @@
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 	<string>30207EC1-A19B-40B8-8715-3E8EB614B2A6</string>
-=======
-		<key>D9DF2F2C-D537-4881-B94B-17F4A334A70C</key>
-		<string>..</string>
-	</dict>
-	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/CharlieWhite/bluenote-ios.git</string>
-	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
-	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D9DF2F2C-D537-4881-B94B-17F4A334A70C</string>
->>>>>>> 02e4e9ffa911c1255cb0de600e91461c9e97b9b1
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-<<<<<<< HEAD
 			<string>30207EC1-A19B-40B8-8715-3E8EB614B2A6</string>
-=======
-			<string>D9DF2F2C-D537-4881-B94B-17F4A334A70C</string>
->>>>>>> 02e4e9ffa911c1255cb0de600e91461c9e97b9b1
 			<key>IDESourceControlWCCName</key>
 			<string>bluenote-ios</string>
 		</dict>

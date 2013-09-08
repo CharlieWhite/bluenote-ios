@@ -9,9 +9,7 @@
 #import "MasterViewController.h"
 
 #import "DetailViewController.h"
-#import "AddNoteViewController.h"
 #import "Note.h"
-#import "TableViewCell.h"
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -50,16 +48,9 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     
-//    [self.tableView registerNib:[UINib nibWithNibName:@"TableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"CustomCellReuseID"];
-    
     
     [self loadNotes];
     //[self.refreshControl beginRefreshing];
-}
-
-- (void) viewDidAppear:(BOOL)animated {
-    NSLog(@"view appeared");
-    [self loadNotes];
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,12 +61,12 @@
 
 - (void)insertNewObject:(id)sender
 {
-     AddNoteViewController *addVC = [[AddNoteViewController alloc] init];
-     [self.navigationController pushViewController:addVC animated:YES];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50.00;
+    if (!_objects) {
+        _objects = [[NSMutableArray alloc] init];
+    }
+    [_objects insertObject:[NSDate date] atIndex:0];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 #pragma mark - Table View
@@ -93,12 +84,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-   
-    
 
-    
     Note *note = _objects[indexPath.row];
-    cell.text = [note message];
+    cell.textLabel.text = [note message];
     return cell;
 }
 
