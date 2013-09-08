@@ -1,1191 +1,592 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>3BF815FCCAB64B45AFE366A0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>5B7BDB0307B54471B834A77D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8885FC106200499193B2DDAD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>AB68E89D00A243EB96329240</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C0A78F4E33444004A92586A6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C0A78F4E33444004A92586A6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CBE363D117DC018B00C2EF89</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBE363E317DC018B00C2EF89</string>
-				<string>CBE3640517DC018C00C2EF89</string>
-				<string>CBE363DC17DC018B00C2EF89</string>
-				<string>CBE363DB17DC018B00C2EF89</string>
-				<string>5B7BDB0307B54471B834A77D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363D217DC018B00C2EF89</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Charlie White</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>CBE363FD17DC018C00C2EF89</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>CBE363D917DC018B00C2EF89</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>CBE363D517DC018B00C2EF89</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>CBE363D117DC018B00C2EF89</string>
-			<key>productRefGroup</key>
-			<string>CBE363DB17DC018B00C2EF89</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>CBE363D917DC018B00C2EF89</string>
-				<string>CBE363FD17DC018C00C2EF89</string>
-			</array>
-		</dict>
-		<key>CBE363D517DC018B00C2EF89</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CBE3640D17DC018C00C2EF89</string>
-				<string>CBE3640E17DC018C00C2EF89</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CBE363D617DC018B00C2EF89</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CBE3641A17DC01C000C2EF89</string>
-				<string>CBE363EE17DC018B00C2EF89</string>
-				<string>CBE3641B17DC01C000C2EF89</string>
-				<string>CBE363F417DC018B00C2EF89</string>
-				<string>CBE363EA17DC018B00C2EF89</string>
-				<string>CBE363F717DC018B00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CBE363D717DC018B00C2EF89</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CBE363E017DC018B00C2EF89</string>
-				<string>CBE363E217DC018B00C2EF89</string>
-				<string>CBE363DE17DC018B00C2EF89</string>
-				<string>AB68E89D00A243EB96329240</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CBE363D817DC018B00C2EF89</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CBE363F917DC018B00C2EF89</string>
-				<string>CBE363E817DC018B00C2EF89</string>
-				<string>CBE363F117DC018B00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CBE363D917DC018B00C2EF89</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CBE3640F17DC018C00C2EF89</string>
-			<key>buildPhases</key>
-			<array>
-				<string>8885FC106200499193B2DDAD</string>
-				<string>CBE363D617DC018B00C2EF89</string>
-				<string>CBE363D717DC018B00C2EF89</string>
-				<string>CBE363D817DC018B00C2EF89</string>
-				<string>3BF815FCCAB64B45AFE366A0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>bluenote-ios</string>
-			<key>productName</key>
-			<string>bluenote-ios</string>
-			<key>productReference</key>
-			<string>CBE363DA17DC018B00C2EF89</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>CBE363DA17DC018B00C2EF89</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>bluenote-ios.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CBE363DB17DC018B00C2EF89</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBE363DA17DC018B00C2EF89</string>
-				<string>CBE363FE17DC018C00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363DC17DC018B00C2EF89</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBE363DD17DC018B00C2EF89</string>
-				<string>CBE363DF17DC018B00C2EF89</string>
-				<string>CBE363E117DC018B00C2EF89</string>
-				<string>CBE363FF17DC018C00C2EF89</string>
-				<string>C0A78F4E33444004A92586A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363DD17DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>CBE363DE17DC018B00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE363DD17DC018B00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE363DF17DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>CBE363E017DC018B00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE363DF17DC018B00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE363E117DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>CBE363E217DC018B00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE363E117DC018B00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE363E317DC018B00C2EF89</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBE3641517DC01B400C2EF89</string>
-				<string>CBE363EC17DC018B00C2EF89</string>
-				<string>CBE363ED17DC018B00C2EF89</string>
-				<string>CBE363EF17DC018B00C2EF89</string>
-				<string>CBE363F217DC018B00C2EF89</string>
-				<string>CBE363F317DC018B00C2EF89</string>
-				<string>CBE363F517DC018B00C2EF89</string>
-				<string>CBE363F617DC018B00C2EF89</string>
-				<string>CBE363F817DC018B00C2EF89</string>
-				<string>CBE363E417DC018B00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>bluenote-ios</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363E417DC018B00C2EF89</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBE363E517DC018B00C2EF89</string>
-				<string>CBE363E617DC018B00C2EF89</string>
-				<string>CBE363E917DC018B00C2EF89</string>
-				<string>CBE363EB17DC018B00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363E517DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>bluenote-ios-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363E617DC018B00C2EF89</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBE363E717DC018B00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363E717DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363E817DC018B00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE363E617DC018B00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE363E917DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363EA17DC018B00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE363E917DC018B00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE363EB17DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>bluenote-ios-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363EC17DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363ED17DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363EE17DC018B00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE363ED17DC018B00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE363EF17DC018B00C2EF89</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBE363F017DC018B00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363F017DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363F117DC018B00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE363EF17DC018B00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE363F217DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MasterViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363F317DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MasterViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363F417DC018B00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE363F317DC018B00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE363F517DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DetailViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363F617DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DetailViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363F717DC018B00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE363F617DC018B00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE363F817DC018B00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE363F917DC018B00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE363F817DC018B00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE363FA17DC018C00C2EF89</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CBE3640C17DC018C00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CBE363FB17DC018C00C2EF89</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CBE3640017DC018C00C2EF89</string>
-				<string>CBE3640217DC018C00C2EF89</string>
-				<string>CBE3640117DC018C00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CBE363FC17DC018C00C2EF89</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CBE3640A17DC018C00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CBE363FD17DC018C00C2EF89</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CBE3641217DC018C00C2EF89</string>
-			<key>buildPhases</key>
-			<array>
-				<string>CBE363FA17DC018C00C2EF89</string>
-				<string>CBE363FB17DC018C00C2EF89</string>
-				<string>CBE363FC17DC018C00C2EF89</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>CBE3640417DC018C00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>bluenote-iosTests</string>
-			<key>productName</key>
-			<string>bluenote-iosTests</string>
-			<key>productReference</key>
-			<string>CBE363FE17DC018C00C2EF89</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>CBE363FE17DC018C00C2EF89</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>bluenote-iosTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CBE363FF17DC018C00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>CBE3640017DC018C00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE363FF17DC018C00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE3640117DC018C00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE363DD17DC018B00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE3640217DC018C00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE363E117DC018B00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE3640317DC018C00C2EF89</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>CBE363D217DC018B00C2EF89</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>CBE363D917DC018B00C2EF89</string>
-			<key>remoteInfo</key>
-			<string>bluenote-ios</string>
-		</dict>
-		<key>CBE3640417DC018C00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>CBE363D917DC018B00C2EF89</string>
-			<key>targetProxy</key>
-			<string>CBE3640317DC018C00C2EF89</string>
-		</dict>
-		<key>CBE3640517DC018C00C2EF89</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBE3640B17DC018C00C2EF89</string>
-				<string>CBE3640617DC018C00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>bluenote-iosTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE3640617DC018C00C2EF89</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBE3640717DC018C00C2EF89</string>
-				<string>CBE3640817DC018C00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE3640717DC018C00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>bluenote-iosTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE3640817DC018C00C2EF89</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBE3640917DC018C00C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE3640917DC018C00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE3640A17DC018C00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE3640817DC018C00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE3640B17DC018C00C2EF89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>bluenote_iosTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE3640C17DC018C00C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE3640B17DC018C00C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE3640D17DC018C00C2EF89</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CBE3640E17DC018C00C2EF89</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CBE3640F17DC018C00C2EF89</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CBE3641017DC018C00C2EF89</string>
-				<string>CBE3641117DC018C00C2EF89</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CBE3641017DC018C00C2EF89</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5B7BDB0307B54471B834A77D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>bluenote-ios/bluenote-ios-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>bluenote-ios/bluenote-ios-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CBE3641117DC018C00C2EF89</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5B7BDB0307B54471B834A77D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>bluenote-ios/bluenote-ios-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>bluenote-ios/bluenote-ios-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CBE3641217DC018C00C2EF89</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CBE3641317DC018C00C2EF89</string>
-				<string>CBE3641417DC018C00C2EF89</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CBE3641317DC018C00C2EF89</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/bluenote-ios.app/bluenote-ios</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>bluenote-ios/bluenote-ios-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>bluenote-iosTests/bluenote-iosTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CBE3641417DC018C00C2EF89</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/bluenote-ios.app/bluenote-ios</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>bluenote-ios/bluenote-ios-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>bluenote-iosTests/bluenote-iosTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CBE3641517DC01B400C2EF89</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBE3641617DC01C000C2EF89</string>
-				<string>CBE3641717DC01C000C2EF89</string>
-				<string>CBE3641817DC01C000C2EF89</string>
-				<string>CBE3641917DC01C000C2EF89</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>models</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE3641617DC01C000C2EF89</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Note.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE3641717DC01C000C2EF89</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Note.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE3641817DC01C000C2EF89</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>User.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE3641917DC01C000C2EF89</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>User.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBE3641A17DC01C000C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE3641717DC01C000C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE3641B17DC01C000C2EF89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE3641917DC01C000C2EF89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>CBE363D217DC018B00C2EF89</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB68E89D00A243EB96329240 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A78F4E33444004A92586A6 /* libPods.a */; };
+		CBB82EFC17DC480A003ADD45 /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB82EFA17DC480A003ADD45 /* AddNoteViewController.m */; };
+		CBB82EFD17DC480A003ADD45 /* AddNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB82EFB17DC480A003ADD45 /* AddNoteViewController.xib */; };
+		CBB82F0317DC50EB003ADD45 /* Mila98x98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB82EFF17DC50EB003ADD45 /* Mila98x98@2x.png */; };
+		CBB82F0517DC50EB003ADD45 /* Andrew98x98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F0117DC50EB003ADD45 /* Andrew98x98@2x.png */; };
+		CBB82F0B17DC586E003ADD45 /* HomeIcon98x98.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F0A17DC586E003ADD45 /* HomeIcon98x98.png */; };
+		CBB82F1417DC5FDF003ADD45 /* Randy98x98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F1317DC5FDF003ADD45 /* Randy98x98@2x.png */; };
+		CBB82F1617DC5FE4003ADD45 /* Randy98x98@2xhighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F1517DC5FE4003ADD45 /* Randy98x98@2xhighlight.png */; };
+		CBB82F1917DC5FEA003ADD45 /* Mila98x98@2xhighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F1717DC5FEA003ADD45 /* Mila98x98@2xhighlight.png */; };
+		CBB82F1A17DC5FEA003ADD45 /* Andrew98x98@2xhighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F1817DC5FEA003ADD45 /* Andrew98x98@2xhighlight.png */; };
+		CBB82F1C17DC6021003ADD45 /* OfficeIcon98x98.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F1B17DC6021003ADD45 /* OfficeIcon98x98.png */; };
+		CBB82F2017DC6080003ADD45 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB82F1E17DC6080003ADD45 /* TableViewCell.m */; };
+		CBB82F2117DC6080003ADD45 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F1F17DC6080003ADD45 /* TableViewCell.xib */; };
+		CBE363DE17DC018B00C2EF89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE363DD17DC018B00C2EF89 /* Foundation.framework */; };
+		CBE363E017DC018B00C2EF89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE363DF17DC018B00C2EF89 /* CoreGraphics.framework */; };
+		CBE363E217DC018B00C2EF89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE363E117DC018B00C2EF89 /* UIKit.framework */; };
+		CBE363E817DC018B00C2EF89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBE363E617DC018B00C2EF89 /* InfoPlist.strings */; };
+		CBE363EA17DC018B00C2EF89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE363E917DC018B00C2EF89 /* main.m */; };
+		CBE363EE17DC018B00C2EF89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE363ED17DC018B00C2EF89 /* AppDelegate.m */; };
+		CBE363F117DC018B00C2EF89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE363EF17DC018B00C2EF89 /* Main.storyboard */; };
+		CBE363F417DC018B00C2EF89 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE363F317DC018B00C2EF89 /* MasterViewController.m */; };
+		CBE363F717DC018B00C2EF89 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE363F617DC018B00C2EF89 /* DetailViewController.m */; };
+		CBE363F917DC018B00C2EF89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE363F817DC018B00C2EF89 /* Images.xcassets */; };
+		CBE3640017DC018C00C2EF89 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE363FF17DC018C00C2EF89 /* XCTest.framework */; };
+		CBE3640117DC018C00C2EF89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE363DD17DC018B00C2EF89 /* Foundation.framework */; };
+		CBE3640217DC018C00C2EF89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE363E117DC018B00C2EF89 /* UIKit.framework */; };
+		CBE3640A17DC018C00C2EF89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBE3640817DC018C00C2EF89 /* InfoPlist.strings */; };
+		CBE3640C17DC018C00C2EF89 /* bluenote_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3640B17DC018C00C2EF89 /* bluenote_iosTests.m */; };
+		CBE3641A17DC01C000C2EF89 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3641717DC01C000C2EF89 /* Note.m */; };
+		CBE3641B17DC01C000C2EF89 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3641917DC01C000C2EF89 /* User.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBE3640317DC018C00C2EF89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBE363D217DC018B00C2EF89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBE363D917DC018B00C2EF89;
+			remoteInfo = "bluenote-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B7BDB0307B54471B834A77D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		C0A78F4E33444004A92586A6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB82EF917DC480A003ADD45 /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
+		CBB82EFA17DC480A003ADD45 /* AddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoteViewController.m; sourceTree = "<group>"; };
+		CBB82EFB17DC480A003ADD45 /* AddNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNoteViewController.xib; sourceTree = "<group>"; };
+		CBB82EFF17DC50EB003ADD45 /* Mila98x98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mila98x98@2x.png"; sourceTree = "<group>"; };
+		CBB82F0117DC50EB003ADD45 /* Andrew98x98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Andrew98x98@2x.png"; sourceTree = "<group>"; };
+		CBB82F0A17DC586E003ADD45 /* HomeIcon98x98.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon98x98.png; sourceTree = "<group>"; };
+		CBB82F1317DC5FDF003ADD45 /* Randy98x98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Randy98x98@2x.png"; sourceTree = "<group>"; };
+		CBB82F1517DC5FE4003ADD45 /* Randy98x98@2xhighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Randy98x98@2xhighlight.png"; sourceTree = "<group>"; };
+		CBB82F1717DC5FEA003ADD45 /* Mila98x98@2xhighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mila98x98@2xhighlight.png"; sourceTree = "<group>"; };
+		CBB82F1817DC5FEA003ADD45 /* Andrew98x98@2xhighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Andrew98x98@2xhighlight.png"; sourceTree = "<group>"; };
+		CBB82F1B17DC6021003ADD45 /* OfficeIcon98x98.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OfficeIcon98x98.png; sourceTree = "<group>"; };
+		CBB82F1D17DC6080003ADD45 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		CBB82F1E17DC6080003ADD45 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		CBB82F1F17DC6080003ADD45 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		CBE363DA17DC018B00C2EF89 /* bluenote-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bluenote-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE363DD17DC018B00C2EF89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CBE363DF17DC018B00C2EF89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CBE363E117DC018B00C2EF89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CBE363E517DC018B00C2EF89 /* bluenote-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bluenote-ios-Info.plist"; sourceTree = "<group>"; };
+		CBE363E717DC018B00C2EF89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CBE363E917DC018B00C2EF89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBE363EB17DC018B00C2EF89 /* bluenote-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bluenote-ios-Prefix.pch"; sourceTree = "<group>"; };
+		CBE363EC17DC018B00C2EF89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBE363ED17DC018B00C2EF89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBE363F017DC018B00C2EF89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBE363F217DC018B00C2EF89 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		CBE363F317DC018B00C2EF89 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		CBE363F517DC018B00C2EF89 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		CBE363F617DC018B00C2EF89 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		CBE363F817DC018B00C2EF89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CBE363FE17DC018C00C2EF89 /* bluenote-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bluenote-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE363FF17DC018C00C2EF89 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CBE3640717DC018C00C2EF89 /* bluenote-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bluenote-iosTests-Info.plist"; sourceTree = "<group>"; };
+		CBE3640917DC018C00C2EF89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CBE3640B17DC018C00C2EF89 /* bluenote_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bluenote_iosTests.m; sourceTree = "<group>"; };
+		CBE3641617DC01C000C2EF89 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		CBE3641717DC01C000C2EF89 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		CBE3641817DC01C000C2EF89 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		CBE3641917DC01C000C2EF89 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBE363D717DC018B00C2EF89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE363E017DC018B00C2EF89 /* CoreGraphics.framework in Frameworks */,
+				CBE363E217DC018B00C2EF89 /* UIKit.framework in Frameworks */,
+				CBE363DE17DC018B00C2EF89 /* Foundation.framework in Frameworks */,
+				AB68E89D00A243EB96329240 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE363FB17DC018C00C2EF89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE3640017DC018C00C2EF89 /* XCTest.framework in Frameworks */,
+				CBE3640217DC018C00C2EF89 /* UIKit.framework in Frameworks */,
+				CBE3640117DC018C00C2EF89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBE363D117DC018B00C2EF89 = {
+			isa = PBXGroup;
+			children = (
+				CBE363E317DC018B00C2EF89 /* bluenote-ios */,
+				CBE3640517DC018C00C2EF89 /* bluenote-iosTests */,
+				CBE363DC17DC018B00C2EF89 /* Frameworks */,
+				CBE363DB17DC018B00C2EF89 /* Products */,
+				5B7BDB0307B54471B834A77D /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		CBE363DB17DC018B00C2EF89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBE363DA17DC018B00C2EF89 /* bluenote-ios.app */,
+				CBE363FE17DC018C00C2EF89 /* bluenote-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBE363DC17DC018B00C2EF89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBE363DD17DC018B00C2EF89 /* Foundation.framework */,
+				CBE363DF17DC018B00C2EF89 /* CoreGraphics.framework */,
+				CBE363E117DC018B00C2EF89 /* UIKit.framework */,
+				CBE363FF17DC018C00C2EF89 /* XCTest.framework */,
+				C0A78F4E33444004A92586A6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBE363E317DC018B00C2EF89 /* bluenote-ios */ = {
+			isa = PBXGroup;
+			children = (
+				CBB82EFF17DC50EB003ADD45 /* Mila98x98@2x.png */,
+				CBB82F1517DC5FE4003ADD45 /* Randy98x98@2xhighlight.png */,
+				CBB82F1717DC5FEA003ADD45 /* Mila98x98@2xhighlight.png */,
+				CBB82F1B17DC6021003ADD45 /* OfficeIcon98x98.png */,
+				CBB82F1817DC5FEA003ADD45 /* Andrew98x98@2xhighlight.png */,
+				CBB82F1317DC5FDF003ADD45 /* Randy98x98@2x.png */,
+				CBB82F0A17DC586E003ADD45 /* HomeIcon98x98.png */,
+				CBB82F0117DC50EB003ADD45 /* Andrew98x98@2x.png */,
+				CBE3641517DC01B400C2EF89 /* models */,
+				CBE363EC17DC018B00C2EF89 /* AppDelegate.h */,
+				CBE363ED17DC018B00C2EF89 /* AppDelegate.m */,
+				CBE363EF17DC018B00C2EF89 /* Main.storyboard */,
+				CBE363F217DC018B00C2EF89 /* MasterViewController.h */,
+				CBE363F317DC018B00C2EF89 /* MasterViewController.m */,
+				CBE363F517DC018B00C2EF89 /* DetailViewController.h */,
+				CBE363F617DC018B00C2EF89 /* DetailViewController.m */,
+				CBE363F817DC018B00C2EF89 /* Images.xcassets */,
+				CBE363E417DC018B00C2EF89 /* Supporting Files */,
+				CBB82EF917DC480A003ADD45 /* AddNoteViewController.h */,
+				CBB82EFA17DC480A003ADD45 /* AddNoteViewController.m */,
+				CBB82EFB17DC480A003ADD45 /* AddNoteViewController.xib */,
+				CBB82F1D17DC6080003ADD45 /* TableViewCell.h */,
+				CBB82F1E17DC6080003ADD45 /* TableViewCell.m */,
+				CBB82F1F17DC6080003ADD45 /* TableViewCell.xib */,
+			);
+			path = "bluenote-ios";
+			sourceTree = "<group>";
+		};
+		CBE363E417DC018B00C2EF89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBE363E517DC018B00C2EF89 /* bluenote-ios-Info.plist */,
+				CBE363E617DC018B00C2EF89 /* InfoPlist.strings */,
+				CBE363E917DC018B00C2EF89 /* main.m */,
+				CBE363EB17DC018B00C2EF89 /* bluenote-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBE3640517DC018C00C2EF89 /* bluenote-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBE3640B17DC018C00C2EF89 /* bluenote_iosTests.m */,
+				CBE3640617DC018C00C2EF89 /* Supporting Files */,
+			);
+			path = "bluenote-iosTests";
+			sourceTree = "<group>";
+		};
+		CBE3640617DC018C00C2EF89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBE3640717DC018C00C2EF89 /* bluenote-iosTests-Info.plist */,
+				CBE3640817DC018C00C2EF89 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBE3641517DC01B400C2EF89 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CBE3641617DC01C000C2EF89 /* Note.h */,
+				CBE3641717DC01C000C2EF89 /* Note.m */,
+				CBE3641817DC01C000C2EF89 /* User.h */,
+				CBE3641917DC01C000C2EF89 /* User.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBE363D917DC018B00C2EF89 /* bluenote-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBE3640F17DC018C00C2EF89 /* Build configuration list for PBXNativeTarget "bluenote-ios" */;
+			buildPhases = (
+				8885FC106200499193B2DDAD /* Check Pods Manifest.lock */,
+				CBE363D617DC018B00C2EF89 /* Sources */,
+				CBE363D717DC018B00C2EF89 /* Frameworks */,
+				CBE363D817DC018B00C2EF89 /* Resources */,
+				3BF815FCCAB64B45AFE366A0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bluenote-ios";
+			productName = "bluenote-ios";
+			productReference = CBE363DA17DC018B00C2EF89 /* bluenote-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBE363FD17DC018C00C2EF89 /* bluenote-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBE3641217DC018C00C2EF89 /* Build configuration list for PBXNativeTarget "bluenote-iosTests" */;
+			buildPhases = (
+				CBE363FA17DC018C00C2EF89 /* Sources */,
+				CBE363FB17DC018C00C2EF89 /* Frameworks */,
+				CBE363FC17DC018C00C2EF89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBE3640417DC018C00C2EF89 /* PBXTargetDependency */,
+			);
+			name = "bluenote-iosTests";
+			productName = "bluenote-iosTests";
+			productReference = CBE363FE17DC018C00C2EF89 /* bluenote-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBE363D217DC018B00C2EF89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Charlie White";
+				TargetAttributes = {
+					CBE363FD17DC018C00C2EF89 = {
+						TestTargetID = CBE363D917DC018B00C2EF89;
+					};
+				};
+			};
+			buildConfigurationList = CBE363D517DC018B00C2EF89 /* Build configuration list for PBXProject "bluenote-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBE363D117DC018B00C2EF89;
+			productRefGroup = CBE363DB17DC018B00C2EF89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBE363D917DC018B00C2EF89 /* bluenote-ios */,
+				CBE363FD17DC018C00C2EF89 /* bluenote-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBE363D817DC018B00C2EF89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB82EFD17DC480A003ADD45 /* AddNoteViewController.xib in Resources */,
+				CBB82F1617DC5FE4003ADD45 /* Randy98x98@2xhighlight.png in Resources */,
+				CBE363F917DC018B00C2EF89 /* Images.xcassets in Resources */,
+				CBB82F1A17DC5FEA003ADD45 /* Andrew98x98@2xhighlight.png in Resources */,
+				CBB82F2117DC6080003ADD45 /* TableViewCell.xib in Resources */,
+				CBB82F0517DC50EB003ADD45 /* Andrew98x98@2x.png in Resources */,
+				CBB82F0317DC50EB003ADD45 /* Mila98x98@2x.png in Resources */,
+				CBE363E817DC018B00C2EF89 /* InfoPlist.strings in Resources */,
+				CBB82F1417DC5FDF003ADD45 /* Randy98x98@2x.png in Resources */,
+				CBB82F1917DC5FEA003ADD45 /* Mila98x98@2xhighlight.png in Resources */,
+				CBB82F1C17DC6021003ADD45 /* OfficeIcon98x98.png in Resources */,
+				CBE363F117DC018B00C2EF89 /* Main.storyboard in Resources */,
+				CBB82F0B17DC586E003ADD45 /* HomeIcon98x98.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE363FC17DC018C00C2EF89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE3640A17DC018C00C2EF89 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BF815FCCAB64B45AFE366A0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8885FC106200499193B2DDAD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBE363D617DC018B00C2EF89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE3641A17DC01C000C2EF89 /* Note.m in Sources */,
+				CBB82EFC17DC480A003ADD45 /* AddNoteViewController.m in Sources */,
+				CBE363EE17DC018B00C2EF89 /* AppDelegate.m in Sources */,
+				CBE3641B17DC01C000C2EF89 /* User.m in Sources */,
+				CBE363F417DC018B00C2EF89 /* MasterViewController.m in Sources */,
+				CBB82F2017DC6080003ADD45 /* TableViewCell.m in Sources */,
+				CBE363EA17DC018B00C2EF89 /* main.m in Sources */,
+				CBE363F717DC018B00C2EF89 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE363FA17DC018C00C2EF89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE3640C17DC018C00C2EF89 /* bluenote_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBE3640417DC018C00C2EF89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBE363D917DC018B00C2EF89 /* bluenote-ios */;
+			targetProxy = CBE3640317DC018C00C2EF89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBE363E617DC018B00C2EF89 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBE363E717DC018B00C2EF89 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CBE363EF17DC018B00C2EF89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBE363F017DC018B00C2EF89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBE3640817DC018C00C2EF89 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBE3640917DC018C00C2EF89 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBE3640D17DC018C00C2EF89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBE3640E17DC018C00C2EF89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBE3641017DC018C00C2EF89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7BDB0307B54471B834A77D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bluenote-ios/bluenote-ios-Prefix.pch";
+				INFOPLIST_FILE = "bluenote-ios/bluenote-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CBE3641117DC018C00C2EF89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7BDB0307B54471B834A77D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bluenote-ios/bluenote-ios-Prefix.pch";
+				INFOPLIST_FILE = "bluenote-ios/bluenote-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CBE3641317DC018C00C2EF89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bluenote-ios.app/bluenote-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bluenote-ios/bluenote-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "bluenote-iosTests/bluenote-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CBE3641417DC018C00C2EF89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bluenote-ios.app/bluenote-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bluenote-ios/bluenote-ios-Prefix.pch";
+				INFOPLIST_FILE = "bluenote-iosTests/bluenote-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBE363D517DC018B00C2EF89 /* Build configuration list for PBXProject "bluenote-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBE3640D17DC018C00C2EF89 /* Debug */,
+				CBE3640E17DC018C00C2EF89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBE3640F17DC018C00C2EF89 /* Build configuration list for PBXNativeTarget "bluenote-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBE3641017DC018C00C2EF89 /* Debug */,
+				CBE3641117DC018C00C2EF89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBE3641217DC018C00C2EF89 /* Build configuration list for PBXNativeTarget "bluenote-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBE3641317DC018C00C2EF89 /* Debug */,
+				CBE3641417DC018C00C2EF89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBE363D217DC018B00C2EF89 /* Project object */;
+}
