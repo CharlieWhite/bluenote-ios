@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		AB68E89D00A243EB96329240 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A78F4E33444004A92586A6 /* libPods.a */; };
 		CBB82EFC17DC480A003ADD45 /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB82EFA17DC480A003ADD45 /* AddNoteViewController.m */; };
 		CBB82EFD17DC480A003ADD45 /* AddNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB82EFB17DC480A003ADD45 /* AddNoteViewController.xib */; };
@@ -20,6 +21,21 @@
 		CBB82F1C17DC6021003ADD45 /* OfficeIcon98x98.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F1B17DC6021003ADD45 /* OfficeIcon98x98.png */; };
 		CBB82F2017DC6080003ADD45 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB82F1E17DC6080003ADD45 /* TableViewCell.m */; };
 		CBB82F2117DC6080003ADD45 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F1F17DC6080003ADD45 /* TableViewCell.xib */; };
+=======
+		2583113617DC14250093B5B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2583113517DC14250093B5B2 /* CoreLocation.framework */; };
+		2583113817DC142C0093B5B2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2583113717DC142C0093B5B2 /* CoreBluetooth.framework */; };
+		491B1ABF17DC23E200B9C07D /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1AB517DC23E200B9C07D /* AppIcon29x29.png */; };
+		491B1AC017DC23E200B9C07D /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1AB617DC23E200B9C07D /* AppIcon29x29@2x.png */; };
+		491B1AC117DC23E200B9C07D /* AppIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1AB717DC23E200B9C07D /* AppIcon40x40.png */; };
+		491B1AC217DC23E200B9C07D /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1AB817DC23E200B9C07D /* AppIcon40x40@2x.png */; };
+		491B1AC317DC23E200B9C07D /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1AB917DC23E200B9C07D /* AppIcon60x60.png */; };
+		491B1AC417DC23E200B9C07D /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1ABA17DC23E200B9C07D /* AppIcon60x60@2x.png */; };
+		491B1AC517DC23E200B9C07D /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1ABB17DC23E200B9C07D /* AppIcon76x76.png */; };
+		491B1AC617DC23E200B9C07D /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1ABC17DC23E200B9C07D /* AppIcon76x76@2x.png */; };
+		491B1AC717DC23E200B9C07D /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1ABD17DC23E200B9C07D /* iTunesArtwork.png */; };
+		491B1AC817DC23E200B9C07D /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1ABE17DC23E200B9C07D /* iTunesArtwork@2x.png */; };
+		AB68E89D00A243EB96329240 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A78F4E33444004A92586A6 /* libPods.a */; };
+>>>>>>> 02e4e9ffa911c1255cb0de600e91461c9e97b9b1
 		CBE363DE17DC018B00C2EF89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE363DD17DC018B00C2EF89 /* Foundation.framework */; };
 		CBE363E017DC018B00C2EF89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE363DF17DC018B00C2EF89 /* CoreGraphics.framework */; };
 		CBE363E217DC018B00C2EF89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE363E117DC018B00C2EF89 /* UIKit.framework */; };
@@ -50,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		5B7BDB0307B54471B834A77D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C0A78F4E33444004A92586A6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB82EF917DC480A003ADD45 /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
@@ -66,6 +83,22 @@
 		CBB82F1D17DC6080003ADD45 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		CBB82F1E17DC6080003ADD45 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		CBB82F1F17DC6080003ADD45 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+=======
+		2583113517DC14250093B5B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2583113717DC142C0093B5B2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		491B1AB517DC23E200B9C07D /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon29x29.png; path = "App Icon [Squared]/AppIcon29x29.png"; sourceTree = "<group>"; };
+		491B1AB617DC23E200B9C07D /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon29x29@2x.png"; path = "App Icon [Squared]/AppIcon29x29@2x.png"; sourceTree = "<group>"; };
+		491B1AB717DC23E200B9C07D /* AppIcon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon40x40.png; path = "App Icon [Squared]/AppIcon40x40.png"; sourceTree = "<group>"; };
+		491B1AB817DC23E200B9C07D /* AppIcon40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon40x40@2x.png"; path = "App Icon [Squared]/AppIcon40x40@2x.png"; sourceTree = "<group>"; };
+		491B1AB917DC23E200B9C07D /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon60x60.png; path = "App Icon [Squared]/AppIcon60x60.png"; sourceTree = "<group>"; };
+		491B1ABA17DC23E200B9C07D /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon60x60@2x.png"; path = "App Icon [Squared]/AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		491B1ABB17DC23E200B9C07D /* AppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon76x76.png; path = "App Icon [Squared]/AppIcon76x76.png"; sourceTree = "<group>"; };
+		491B1ABC17DC23E200B9C07D /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon76x76@2x.png"; path = "App Icon [Squared]/AppIcon76x76@2x.png"; sourceTree = "<group>"; };
+		491B1ABD17DC23E200B9C07D /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = "App Icon [Squared]/iTunesArtwork.png"; sourceTree = "<group>"; };
+		491B1ABE17DC23E200B9C07D /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "App Icon [Squared]/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		5B7BDB0307B54471B834A77D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		C0A78F4E33444004A92586A6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+>>>>>>> 02e4e9ffa911c1255cb0de600e91461c9e97b9b1
 		CBE363DA17DC018B00C2EF89 /* bluenote-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bluenote-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE363DD17DC018B00C2EF89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CBE363DF17DC018B00C2EF89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,6 +131,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+=======
+				2583113817DC142C0093B5B2 /* CoreBluetooth.framework in Frameworks */,
+				2583113617DC14250093B5B2 /* CoreLocation.framework in Frameworks */,
+>>>>>>> 02e4e9ffa911c1255cb0de600e91461c9e97b9b1
 				CBE363E017DC018B00C2EF89 /* CoreGraphics.framework in Frameworks */,
 				CBE363E217DC018B00C2EF89 /* UIKit.framework in Frameworks */,
 				CBE363DE17DC018B00C2EF89 /* Foundation.framework in Frameworks */,
@@ -118,6 +156,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
+=======
+		491B1A9B17DC22AA00B9C07D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				491B1AB517DC23E200B9C07D /* AppIcon29x29.png */,
+				491B1AB617DC23E200B9C07D /* AppIcon29x29@2x.png */,
+				491B1AB717DC23E200B9C07D /* AppIcon40x40.png */,
+				491B1AB817DC23E200B9C07D /* AppIcon40x40@2x.png */,
+				491B1AB917DC23E200B9C07D /* AppIcon60x60.png */,
+				491B1ABA17DC23E200B9C07D /* AppIcon60x60@2x.png */,
+				491B1ABB17DC23E200B9C07D /* AppIcon76x76.png */,
+				491B1ABC17DC23E200B9C07D /* AppIcon76x76@2x.png */,
+				491B1ABD17DC23E200B9C07D /* iTunesArtwork.png */,
+				491B1ABE17DC23E200B9C07D /* iTunesArtwork@2x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+>>>>>>> 02e4e9ffa911c1255cb0de600e91461c9e97b9b1
 		CBE363D117DC018B00C2EF89 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +199,11 @@
 		CBE363DC17DC018B00C2EF89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
+				2583113717DC142C0093B5B2 /* CoreBluetooth.framework */,
+				2583113517DC14250093B5B2 /* CoreLocation.framework */,
+>>>>>>> 02e4e9ffa911c1255cb0de600e91461c9e97b9b1
 				CBE363DD17DC018B00C2EF89 /* Foundation.framework */,
 				CBE363DF17DC018B00C2EF89 /* CoreGraphics.framework */,
 				CBE363E117DC018B00C2EF89 /* UIKit.framework */,
@@ -153,6 +216,7 @@
 		CBE363E317DC018B00C2EF89 /* bluenote-ios */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				CBB82EFF17DC50EB003ADD45 /* Mila98x98@2x.png */,
 				CBB82F1517DC5FE4003ADD45 /* Randy98x98@2xhighlight.png */,
 				CBB82F1717DC5FEA003ADD45 /* Mila98x98@2xhighlight.png */,
@@ -161,6 +225,9 @@
 				CBB82F1317DC5FDF003ADD45 /* Randy98x98@2x.png */,
 				CBB82F0A17DC586E003ADD45 /* HomeIcon98x98.png */,
 				CBB82F0117DC50EB003ADD45 /* Andrew98x98@2x.png */,
+=======
+				491B1A9B17DC22AA00B9C07D /* Assets */,
+>>>>>>> 02e4e9ffa911c1255cb0de600e91461c9e97b9b1
 				CBE3641517DC01B400C2EF89 /* models */,
 				CBE363EC17DC018B00C2EF89 /* AppDelegate.h */,
 				CBE363ED17DC018B00C2EF89 /* AppDelegate.m */,
@@ -171,12 +238,15 @@
 				CBE363F617DC018B00C2EF89 /* DetailViewController.m */,
 				CBE363F817DC018B00C2EF89 /* Images.xcassets */,
 				CBE363E417DC018B00C2EF89 /* Supporting Files */,
+<<<<<<< HEAD
 				CBB82EF917DC480A003ADD45 /* AddNoteViewController.h */,
 				CBB82EFA17DC480A003ADD45 /* AddNoteViewController.m */,
 				CBB82EFB17DC480A003ADD45 /* AddNoteViewController.xib */,
 				CBB82F1D17DC6080003ADD45 /* TableViewCell.h */,
 				CBB82F1E17DC6080003ADD45 /* TableViewCell.m */,
 				CBB82F1F17DC6080003ADD45 /* TableViewCell.xib */,
+=======
+>>>>>>> 02e4e9ffa911c1255cb0de600e91461c9e97b9b1
 			);
 			path = "bluenote-ios";
 			sourceTree = "<group>";
@@ -299,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				CBB82EFD17DC480A003ADD45 /* AddNoteViewController.xib in Resources */,
 				CBB82F1617DC5FE4003ADD45 /* Randy98x98@2xhighlight.png in Resources */,
 				CBE363F917DC018B00C2EF89 /* Images.xcassets in Resources */,
@@ -312,6 +383,21 @@
 				CBB82F1C17DC6021003ADD45 /* OfficeIcon98x98.png in Resources */,
 				CBE363F117DC018B00C2EF89 /* Main.storyboard in Resources */,
 				CBB82F0B17DC586E003ADD45 /* HomeIcon98x98.png in Resources */,
+=======
+				491B1AC217DC23E200B9C07D /* AppIcon40x40@2x.png in Resources */,
+				491B1AC817DC23E200B9C07D /* iTunesArtwork@2x.png in Resources */,
+				CBE363F917DC018B00C2EF89 /* Images.xcassets in Resources */,
+				491B1AC517DC23E200B9C07D /* AppIcon76x76.png in Resources */,
+				491B1AC417DC23E200B9C07D /* AppIcon60x60@2x.png in Resources */,
+				491B1AC017DC23E200B9C07D /* AppIcon29x29@2x.png in Resources */,
+				CBE363E817DC018B00C2EF89 /* InfoPlist.strings in Resources */,
+				491B1AC117DC23E200B9C07D /* AppIcon40x40.png in Resources */,
+				CBE363F117DC018B00C2EF89 /* Main.storyboard in Resources */,
+				491B1AC717DC23E200B9C07D /* iTunesArtwork.png in Resources */,
+				491B1AC617DC23E200B9C07D /* AppIcon76x76@2x.png in Resources */,
+				491B1ABF17DC23E200B9C07D /* AppIcon29x29.png in Resources */,
+				491B1AC317DC23E200B9C07D /* AppIcon60x60.png in Resources */,
+>>>>>>> 02e4e9ffa911c1255cb0de600e91461c9e97b9b1
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,11 +450,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBE3641A17DC01C000C2EF89 /* Note.m in Sources */,
+<<<<<<< HEAD
 				CBB82EFC17DC480A003ADD45 /* AddNoteViewController.m in Sources */,
 				CBE363EE17DC018B00C2EF89 /* AppDelegate.m in Sources */,
 				CBE3641B17DC01C000C2EF89 /* User.m in Sources */,
 				CBE363F417DC018B00C2EF89 /* MasterViewController.m in Sources */,
 				CBB82F2017DC6080003ADD45 /* TableViewCell.m in Sources */,
+=======
+				CBE363EE17DC018B00C2EF89 /* AppDelegate.m in Sources */,
+				CBE3641B17DC01C000C2EF89 /* User.m in Sources */,
+				CBE363F417DC018B00C2EF89 /* MasterViewController.m in Sources */,
+>>>>>>> 02e4e9ffa911c1255cb0de600e91461c9e97b9b1
 				CBE363EA17DC018B00C2EF89 /* main.m in Sources */,
 				CBE363F717DC018B00C2EF89 /* DetailViewController.m in Sources */,
 			);
