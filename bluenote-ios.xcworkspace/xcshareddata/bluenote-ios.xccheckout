@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ACCE7162-5475-4C27-AD00-8A1B4A925CDB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>bluenote-ios</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D9DF2F2C-D537-4881-B94B-17F4A334A70C</key>
+		<string>https://github.com/CharlieWhite/bluenote-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>bluenote-ios.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D9DF2F2C-D537-4881-B94B-17F4A334A70C</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CharlieWhite/bluenote-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D9DF2F2C-D537-4881-B94B-17F4A334A70C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D9DF2F2C-D537-4881-B94B-17F4A334A70C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>bluenote-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
