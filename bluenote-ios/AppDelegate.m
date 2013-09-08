@@ -7,12 +7,62 @@
 //
 
 #import "AppDelegate.h"
+#import "Note.h"
+#import "User.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    // Configure the object manager
+    RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://fierce-inlet-6385.herokuapp.com/api"]];
+    objectManager.requestSerializationMIMEType = RKMIMETypeJSON;
+    //
+    //    RKLogConfigureByName("RestKit", RKLogLevelWarning);
+    //    RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelTrace);
+    //    RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
+    
+    
+    // user
+    RKObjectMapping* noteMapping = [RKObjectMapping mappingForClass:[Note class]];
+    [noteMapping addAttributeMappingsFromDictionary:@{
+                                                      @"id": @"noteId",
+                                                      @"message": @"message",
+                                                      @"from_user_id": @"fromUserId",
+                                                      @"created_at": @"createdAt"
+                                                      }];
+    
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:noteMapping method:RKRequestMethodGET pathPattern:nil keyPath:@"notes" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    
+    [objectManager addResponseDescriptor:responseDescriptor];
+    
+    RKObjectMapping* noteRequestMapping = [noteMapping inverseMapping];
+    
+    // Now configure the request descriptor
+    RKRequestDescriptor *requestDescriptor = [RKRequestDescriptor requestDescriptorWithMapping:noteRequestMapping objectClass:[Note class] rootKeyPath:@"note"];
+    
+    [objectManager addRequestDescriptor:requestDescriptor];
+    
+    // users
+    RKObjectMapping* userMapping = [RKObjectMapping mappingForClass:[User class]];
+    [userMapping addAttributeMappingsFromDictionary:@{
+                                                      @"name": @"name",
+                                                      @"id": @"userId",
+                                                      @"at_home": @"atHome"
+                                                      }];
+    
+    RKResponseDescriptor *userResponseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:userMapping method:RKRequestMethodGET pathPattern:nil keyPath:@"users" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    
+    [objectManager addResponseDescriptor:userResponseDescriptor];
+    
+    RKObjectMapping* userRequestMapping = [userMapping inverseMapping];
+    
+    // Now configure the request descriptor
+    RKRequestDescriptor *userRequestDescriptor = [RKRequestDescriptor requestDescriptorWithMapping:userRequestMapping objectClass:[User class] rootKeyPath:@"user"];
+    
+    [objectManager addRequestDescriptor:userRequestDescriptor];
+    
     return YES;
 }
 							

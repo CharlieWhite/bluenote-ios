@@ -9,6 +9,7 @@
 #import "MasterViewController.h"
 
 #import "DetailViewController.h"
+#import "Note.h"
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -22,6 +23,22 @@
     [super awakeFromNib];
 }
 
+- (void)loadNotes
+{
+    [[RKObjectManager sharedManager] getObjectsAtPath:@"notes" parameters:nil
+                                              success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                                                  // Handled with articleDescriptor
+                                                  _objects = mappingResult.array;
+                                                  [self.refreshControl endRefreshing];
+                                                  [self.tableView reloadData];
+                                              } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+                                                  [self.refreshControl endRefreshing];
+                                                  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"An Error Has Occurred" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                                                  [alertView show];
+                                              }];
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -30,6 +47,10 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
+    
+    [self loadNotes];
+    //[self.refreshControl beginRefreshing];
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,8 +85,8 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    Note *note = _objects[indexPath.row];
+    cell.textLabel.text = [note message];
     return cell;
 }
 
