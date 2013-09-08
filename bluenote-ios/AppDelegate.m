@@ -12,6 +12,16 @@
 
 @implementation AppDelegate
 
+{
+    
+    CLLocationManager *_locationManager;
+    BOOL _enabled;
+    BOOL _notifyOnEntry;
+    BOOL _notifyOnExit;
+    BOOL _notifyOnDisplay;
+
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
@@ -63,8 +73,103 @@
     
     [objectManager addRequestDescriptor:userRequestDescriptor];
     
+    NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:@"E2C56DB5-DFFB-48D2-B060-D0F5A71096E0"];
+    CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:uuid major:((unsigned short)1)  minor:((unsigned short)1) identifier:@"com.apple.bluenote-ios"];
+    _locationManager = [[CLLocationManager alloc] init];
+    _locationManager.delegate = self;
+    region.notifyEntryStateOnDisplay = YES;
+    region.notifyOnEntry = YES;
+    region.notifyOnExit = YES;
+    [_locationManager startMonitoringForRegion:region];
+    
     return YES;
 }
+
+// RANDO ADDED THIS FROM AIRLOCATE APP ///////////////////////
+
+- (void)locationManager:(CLLocationManager*)manager didStartMonitoringForRegion:(CLRegion *)region {
+    NSLog(@"Monitoring Status");
+}
+
+- (void)locationManager:(CLLocationManager *)manager monitoringDidFailForRegion:(CLRegion *)region withError:(NSError *)error {
+    NSLog(@"%@",[error localizedDescription]);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region
+{
+    // A user can transition in or out of a region while the application is not running.
+    // When this happens CoreLocation will launch the application momentarily, call this delegate method
+    // and we will let the user know via a local notification.NSLog(@"Monitoring Status");
+    NSLog(@"Monitoring didDetermineState");
+    
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    NSLog(@"Monitoring UILocal");
+    
+    if(state == CLRegionStateInside)
+    {
+        NSLog(@"Monitoring IfSO");
+        
+        notification.alertBody = @"WELCOME HOME!";
+        NSLog(@"Monitoring IfSO");
+        notification.fireDate = [[NSDate date] dateByAddingTimeInterval:2];
+        NSLog(@"Monitoring IfSO");
+        
+        
+        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+        
+        NSLog(@"Monitoring IfSO");
+        
+        NSString *cancelTitle = @"Close";
+        NSString *showTitle = @"Show Me";
+        NSString *message = @"";
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"WELCOME HOME!"
+                                                            message:message
+                                                           delegate:self
+                                                  cancelButtonTitle:cancelTitle
+                                                  otherButtonTitles:showTitle, nil];
+        [alertView show];
+        
+        
+    }
+    else if(state == CLRegionStateOutside)
+    {
+        NSLog(@"Monitoring IfNOT");
+        
+        notification.alertBody = @"YOU HAVE LEFT HOME";
+        if (notification == nil)
+            return;
+        notification.fireDate = [[NSDate date] dateByAddingTimeInterval:2];
+        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+        
+        
+        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+        
+        NSLog(@"Monitoring IfSO");
+        
+        NSString *cancelTitle = @"Close";
+        NSString *showTitle = @"Show";
+        NSString *message = @"alert";
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"YOU HAVE LEFT HOME"
+                                                            message:message
+                                                           delegate:self
+                                                  cancelButtonTitle:cancelTitle
+                                                  otherButtonTitles:showTitle, nil];
+        [alertView show];
+        
+        
+        
+    }
+    else
+    {
+        return;
+    }
+    
+    // If the application is in the foreground, it will get a callback to application:didReceiveLocalNotification:.
+    // If its not, iOS will display the notification to the user.
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+}
+
+/////////////////////////////////
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {

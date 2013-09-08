@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>ADA7DD40-3D59-4997-93B6-3EE450D2F3C2</string>
+	<string>AC081962-D3B1-4E97-B08A-9C48AFA3297D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>bluenote-ios</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>30207EC1-A19B-40B8-8715-3E8EB614B2A6</key>
-		<string>https://github.com/CharlieWhite/bluenote-ios</string>
+		<key>90A89347-C3FB-4316-A447-03DF5591D7B3</key>
+		<string>https://github.com/CharlieWhite/bluenote-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>bluenote-ios.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>30207EC1-A19B-40B8-8715-3E8EB614B2A6</key>
+		<key>90A89347-C3FB-4316-A447-03DF5591D7B3</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/CharlieWhite/bluenote-ios</string>
+	<string>https://github.com/CharlieWhite/bluenote-ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>30207EC1-A19B-40B8-8715-3E8EB614B2A6</string>
+	<string>90A89347-C3FB-4316-A447-03DF5591D7B3</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>30207EC1-A19B-40B8-8715-3E8EB614B2A6</string>
+			<string>90A89347-C3FB-4316-A447-03DF5591D7B3</string>
 			<key>IDESourceControlWCCName</key>
 			<string>bluenote-ios</string>
 		</dict>
