@@ -38,8 +38,9 @@
 - (void)sendNote:(id)sender {
     
     Note *note = [[Note alloc] init];
-    note.message = noteTextField;
+    note.message = noteTextField.text;
     [[RKObjectManager sharedManager] postObject:note path:@"notes" parameters:nil success:nil failure:nil];
+    [self.navigationController popViewControllerAnimated:YES];
     
 
     

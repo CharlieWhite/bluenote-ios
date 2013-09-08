@@ -30,6 +30,7 @@
 		CBB82F3217DC7B4F003ADD45 /* HomeIcon98x98.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F3117DC7B4F003ADD45 /* HomeIcon98x98.png */; };
 		CBB82F3417DC7B58003ADD45 /* Mila98x98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F3317DC7B58003ADD45 /* Mila98x98@2x.png */; };
 		CBB82F3617DC7B5D003ADD45 /* Andrew98x98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F3517DC7B5D003ADD45 /* Andrew98x98@2x.png */; };
+		CBB82F3817DC7F9E003ADD45 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F3717DC7F9D003ADD45 /* download.jpeg */; };
 		CBE363DE17DC018B00C2EF89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE363DD17DC018B00C2EF89 /* Foundation.framework */; };
 		CBE363E017DC018B00C2EF89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE363DF17DC018B00C2EF89 /* CoreGraphics.framework */; };
 		CBE363E217DC018B00C2EF89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE363E117DC018B00C2EF89 /* UIKit.framework */; };
@@ -85,6 +86,7 @@
 		CBB82F3117DC7B4F003ADD45 /* HomeIcon98x98.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon98x98.png; sourceTree = "<group>"; };
 		CBB82F3317DC7B58003ADD45 /* Mila98x98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mila98x98@2x.png"; sourceTree = "<group>"; };
 		CBB82F3517DC7B5D003ADD45 /* Andrew98x98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Andrew98x98@2x.png"; sourceTree = "<group>"; };
+		CBB82F3717DC7F9D003ADD45 /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
 		CBE363DA17DC018B00C2EF89 /* bluenote-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bluenote-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE363DD17DC018B00C2EF89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CBE363DF17DC018B00C2EF89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -199,6 +201,7 @@
 				CBE363ED17DC018B00C2EF89 /* AppDelegate.m */,
 				CBE363EF17DC018B00C2EF89 /* Main.storyboard */,
 				CBB82F2717DC7B40003ADD45 /* Randy98x98@2xhighlight.png */,
+				CBB82F3717DC7F9D003ADD45 /* download.jpeg */,
 				CBB82F2F17DC7B49003ADD45 /* OfficeIcon98x98 (2).png */,
 				CBB82F3117DC7B4F003ADD45 /* HomeIcon98x98.png */,
 				CBB82F3317DC7B58003ADD45 /* Mila98x98@2x.png */,
@@ -346,6 +349,7 @@
 				CBB82F2C17DC7B40003ADD45 /* Randy98x98@2x.png in Resources */,
 				CBE363E817DC018B00C2EF89 /* InfoPlist.strings in Resources */,
 				CBB82F3017DC7B49003ADD45 /* OfficeIcon98x98 (2).png in Resources */,
+				CBB82F3817DC7F9E003ADD45 /* download.jpeg in Resources */,
 				491B1AC117DC23E200B9C07D /* AppIcon40x40.png in Resources */,
 				CBB82F2617DC7AB8003ADD45 /* AddNoteViewController.xib in Resources */,
 				CBE363F117DC018B00C2EF89 /* Main.storyboard in Resources */,

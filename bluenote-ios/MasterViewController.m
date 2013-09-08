@@ -9,6 +9,7 @@
 #import "MasterViewController.h"
 
 #import "DetailViewController.h"
+#import "AddNoteViewController.h"
 #import "Note.h"
 
 @interface MasterViewController () {
@@ -53,6 +54,10 @@
     //[self.refreshControl beginRefreshing];
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+    [self loadNotes];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -61,12 +66,8 @@
 
 - (void)insertNewObject:(id)sender
 {
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    AddNoteViewController *addVC = [[AddNoteViewController alloc] init];
+    [self.navigationController pushViewController:addVC animated:YES];
 }
 
 #pragma mark - Table View
