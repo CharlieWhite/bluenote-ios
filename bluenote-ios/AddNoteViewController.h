@@ -10,5 +10,8 @@
 
 @interface AddNoteViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *noteTextField;
+@property (weak, nonatomic) IBOutlet UIImageView *image1;
+@property (weak, nonatomic) IBOutlet UIImageView *image2;
+@property (weak, nonatomic) IBOutlet UIImageView *image3;
 
 @end

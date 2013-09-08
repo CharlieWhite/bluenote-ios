@@ -15,7 +15,7 @@
 
 @implementation AddNoteViewController
 
-@synthesize noteTextField;
+@synthesize noteTextField, image1, image2, image3;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,6 +35,10 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
 - (void)sendNote:(id)sender {
     
     Note *note = [[Note alloc] init];
@@ -44,6 +48,29 @@
     
 
     
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    NSLog(@"touches");
+    UITouch *touch = [touches anyObject];
+    if ([touch view] == image1) {
+        // Do something here
+        image1.highlighted = YES;
+        image2.highlighted = NO;
+        image3.highlighted = NO;
+    }
+    if ([touch view] == image2) {
+        // Do something here
+        image1.highlighted = NO;
+        image2.highlighted = YES;
+        image3.highlighted = NO;
+    }
+    if ([touch view] == image3) {
+        // Do something here
+        image1.highlighted = NO;
+        image2.highlighted = NO;
+        image3.highlighted = YES;
+    }
 }
 
 

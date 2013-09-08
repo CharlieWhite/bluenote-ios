@@ -6,6 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNoteViewController">
             <connections>
+                <outlet property="image1" destination="e5c-CF-YTP" id="ODq-Dk-HOc"/>
+                <outlet property="image2" destination="R0H-Ng-YoV" id="3TP-va-b5V"/>
+                <outlet property="image3" destination="Mlo-1v-e46" id="Wdx-eF-NoD"/>
                 <outlet property="noteTextField" destination="eVu-GR-g3V" id="cmA-GG-1sg"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -15,8 +18,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Andrew98x98.png" highlightedImage="Andrew98x98@2xhighlight.png" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e5c-CF-YTP">
-                    <rect key="frame" x="0.0" y="66" width="99" height="100"/>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Andrew98x98.png" highlightedImage="Andrew98x98@2xhighlight.png" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e5c-CF-YTP">
+                    <rect key="frame" x="0.0" y="73" width="99" height="100"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomeIcon98x98.png" translatesAutoresizingMaskIntoConstraints="NO" id="o5Z-K0-0nH">
@@ -27,16 +30,16 @@
                     <rect key="frame" x="107" y="208" width="77" height="75"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mila98x98.png" highlightedImage="Mila98x98@2xhighlight.png" translatesAutoresizingMaskIntoConstraints="NO" id="R0H-Ng-YoV">
-                    <rect key="frame" x="107" y="66" width="99" height="100"/>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mila98x98.png" highlightedImage="Mila98x98@2xhighlight.png" translatesAutoresizingMaskIntoConstraints="NO" id="R0H-Ng-YoV">
+                    <rect key="frame" x="107" y="73" width="99" height="100"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Randy98x98.png" highlightedImage="Randy98x98@2xhighlight.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mlo-1v-e46">
-                    <rect key="frame" x="221" y="66" width="99" height="100"/>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Randy98x98.png" highlightedImage="Randy98x98@2xhighlight.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mlo-1v-e46">
+                    <rect key="frame" x="221" y="73" width="99" height="100"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where to send" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkv-jB-XnH">
-                    <rect key="frame" x="11" y="179" width="112" height="21"/>
+                    <rect key="frame" x="11" y="187" width="112" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
