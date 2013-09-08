@@ -18,6 +18,7 @@ NSString *localReceived = @"localReceived";
 {
     
     CLLocationManager *_locationManager;
+    BOOL shouldNotify;
 
 }
 
@@ -25,6 +26,8 @@ NSString *localReceived = @"localReceived";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    shouldNotify = NO;
     // Override point for customization after application launch.
     // Configure the object manager
     RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://fierce-inlet-6385.herokuapp.com/api"]];
@@ -74,6 +77,7 @@ NSString *localReceived = @"localReceived";
     
     [objectManager addRequestDescriptor:userRequestDescriptor];
     
+    
     NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:@"E2C56DB5-DFFB-48D2-B060-D0F5A71096E0"];
     CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:uuid major:((unsigned short)1)  minor:((unsigned short)1) identifier:@"com.apple.bluenote-ios"];
     _locationManager = [[CLLocationManager alloc] init];
@@ -82,17 +86,16 @@ NSString *localReceived = @"localReceived";
     region.notifyOnEntry = YES;
     region.notifyOnExit = YES;
     [_locationManager startMonitoringForRegion:region];
+    [_locationManager startRangingBeaconsInRegion:region];
+
+    NSLog(@"TEST Monitor Ranging Init");
     
     return YES;
-}
 
-- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
-    [[NSNotificationCenter defaultCenter] postNotificationName:localReceived object:self];
     
-    NSLog(@"notif");
-}
+   
 
-// RANDO ADDED THIS FROM AIRLOCATE APP ///////////////////////
+}
 
 - (void)locationManager:(CLLocationManager*)manager didStartMonitoringForRegion:(CLRegion *)region {
     NSLog(@"Monitoring Status");
@@ -102,41 +105,40 @@ NSString *localReceived = @"localReceived";
     NSLog(@"%@",[error localizedDescription]);
 }
 
-- (void)locationManager:(CLLocationManager *)manager didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region
-{
-    // A user can transition in or out of a region while the application is not running.
-    // When this happens CoreLocation will launch the application momentarily, call this delegate method
-    // and we will let the user know via a local notification.NSLog(@"Monitoring Status");
-    NSLog(@"Monitoring didDetermineState");
-    
-    UILocalNotification *notification = [[UILocalNotification alloc] init];
-    NSLog(@"Monitoring UILocal");
-    
-    if(state == CLRegionStateInside)
+
+- (void)locationManager:(CLLocationManager *)manager
+        didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
     {
-        notification.alertBody = @"WELCOME HOME!";
-        notification.soundName = UILocalNotificationDefaultSoundName;
-        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
-        
-    }
-    else if(state == CLRegionStateOutside)
-    {
-        
-        notification.alertBody = @"YOU HAVE LEFT HOME";
-        notification.soundName = UILocalNotificationDefaultSoundName;
-        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
-        
-    }
-    else
-    {
-        return;
-    }
+        NSLog(@"BEACON RANGE TEST 1");
     
-    // If the application is in the foreground, it will get a callback to application:didReceiveLocalNotification:.
-    // If its not, iOS will display the notification to the user.
+    if ([beacons count] > 0) {
+        CLBeacon *beacon = [beacons firstObject];
+        if (beacon.proximity == CLProximityImmediate && shouldNotify == NO){
+           
+           shouldNotify = YES;
+            UILocalNotification *notification = [[UILocalNotification alloc] init];
+            notification.alertBody = @"New BlueNote!";
+            notification.soundName = UILocalNotificationDefaultSoundName;
+
+            [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+            NSLog(@"BEACON RANGE TEST 3");
+           }
+        
+        }
+    }
+
+
+
+
+
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+    [[NSNotificationCenter defaultCenter] postNotificationName:localReceived object:self];
+    
+    NSLog(@"notif");
 }
 
-/////////////////////////////////
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
