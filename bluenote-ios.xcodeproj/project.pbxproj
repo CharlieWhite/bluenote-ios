@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2583113617DC14250093B5B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2583113517DC14250093B5B2 /* CoreLocation.framework */; };
 		2583113817DC142C0093B5B2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2583113717DC142C0093B5B2 /* CoreBluetooth.framework */; };
-		491B1A9E17DC22E900B9C07D /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1A9C17DC22E900B9C07D /* AppIcon60x60.png */; };
-		491B1A9F17DC22E900B9C07D /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1A9D17DC22E900B9C07D /* AppIcon60x60@2x.png */; };
 		491B1ABF17DC23E200B9C07D /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1AB517DC23E200B9C07D /* AppIcon29x29.png */; };
 		491B1AC017DC23E200B9C07D /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1AB617DC23E200B9C07D /* AppIcon29x29@2x.png */; };
 		491B1AC117DC23E200B9C07D /* AppIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1AB717DC23E200B9C07D /* AppIcon40x40.png */; };
@@ -54,8 +52,6 @@
 /* Begin PBXFileReference section */
 		2583113517DC14250093B5B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2583113717DC142C0093B5B2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		491B1A9C17DC22E900B9C07D /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon60x60.png; sourceTree = "<group>"; };
-		491B1A9D17DC22E900B9C07D /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
 		491B1AB517DC23E200B9C07D /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon29x29.png; path = "App Icon [Squared]/AppIcon29x29.png"; sourceTree = "<group>"; };
 		491B1AB617DC23E200B9C07D /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon29x29@2x.png"; path = "App Icon [Squared]/AppIcon29x29@2x.png"; sourceTree = "<group>"; };
 		491B1AB717DC23E200B9C07D /* AppIcon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon40x40.png; path = "App Icon [Squared]/AppIcon40x40.png"; sourceTree = "<group>"; };
@@ -135,8 +131,6 @@
 				491B1ABC17DC23E200B9C07D /* AppIcon76x76@2x.png */,
 				491B1ABD17DC23E200B9C07D /* iTunesArtwork.png */,
 				491B1ABE17DC23E200B9C07D /* iTunesArtwork@2x.png */,
-				491B1A9C17DC22E900B9C07D /* AppIcon60x60.png */,
-				491B1A9D17DC22E900B9C07D /* AppIcon60x60@2x.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -313,10 +307,8 @@
 			files = (
 				491B1AC217DC23E200B9C07D /* AppIcon40x40@2x.png in Resources */,
 				491B1AC817DC23E200B9C07D /* iTunesArtwork@2x.png in Resources */,
-				491B1A9F17DC22E900B9C07D /* AppIcon60x60@2x.png in Resources */,
 				CBE363F917DC018B00C2EF89 /* Images.xcassets in Resources */,
 				491B1AC517DC23E200B9C07D /* AppIcon76x76.png in Resources */,
-				491B1A9E17DC22E900B9C07D /* AppIcon60x60.png in Resources */,
 				491B1AC417DC23E200B9C07D /* AppIcon60x60@2x.png in Resources */,
 				491B1AC017DC23E200B9C07D /* AppIcon29x29@2x.png in Resources */,
 				CBE363E817DC018B00C2EF89 /* InfoPlist.strings in Resources */,
