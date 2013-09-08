@@ -19,6 +19,8 @@
 		491B1AC617DC23E200B9C07D /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1ABC17DC23E200B9C07D /* AppIcon76x76@2x.png */; };
 		491B1AC717DC23E200B9C07D /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1ABD17DC23E200B9C07D /* iTunesArtwork.png */; };
 		491B1AC817DC23E200B9C07D /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1ABE17DC23E200B9C07D /* iTunesArtwork@2x.png */; };
+		491B1B2917DCCDC800B9C07D /* Launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1B2817DCCDC800B9C07D /* Launch@2x.png */; };
+		491B1B2B17DCCE4900B9C07D /* Launch640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 491B1B2A17DCCE4900B9C07D /* Launch640x960.png */; };
 		AB68E89D00A243EB96329240 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A78F4E33444004A92586A6 /* libPods.a */; };
 		CBB82F2517DC7AB8003ADD45 /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB82F2317DC7AB8003ADD45 /* AddNoteViewController.m */; };
 		CBB82F2617DC7AB8003ADD45 /* AddNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB82F2417DC7AB8003ADD45 /* AddNoteViewController.xib */; };
@@ -75,6 +77,8 @@
 		491B1ABC17DC23E200B9C07D /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon76x76@2x.png"; path = "App Icon [Squared]/AppIcon76x76@2x.png"; sourceTree = "<group>"; };
 		491B1ABD17DC23E200B9C07D /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = "App Icon [Squared]/iTunesArtwork.png"; sourceTree = "<group>"; };
 		491B1ABE17DC23E200B9C07D /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "App Icon [Squared]/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		491B1B2817DCCDC800B9C07D /* Launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch@2x.png"; sourceTree = "<group>"; };
+		491B1B2A17DCCE4900B9C07D /* Launch640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch640x960.png; sourceTree = "<group>"; };
 		5B7BDB0307B54471B834A77D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C0A78F4E33444004A92586A6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB82F2217DC7AB8003ADD45 /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 		491B1A9B17DC22AA00B9C07D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				491B1B2817DCCDC800B9C07D /* Launch@2x.png */,
+				491B1B2A17DCCE4900B9C07D /* Launch640x960.png */,
 				CBB82F3717DC7F9D003ADD45 /* download.jpeg */,
 				CBB82F2717DC7B40003ADD45 /* Randy98x98@2xhighlight.png */,
 				491B1AB517DC23E200B9C07D /* AppIcon29x29.png */,
@@ -352,6 +358,7 @@
 				491B1AC517DC23E200B9C07D /* AppIcon76x76.png in Resources */,
 				CBB82F3B17DC8B3D003ADD45 /* HomeIcon98x98Highlighted.png in Resources */,
 				491B1AC417DC23E200B9C07D /* AppIcon60x60@2x.png in Resources */,
+				491B1B2B17DCCE4900B9C07D /* Launch640x960.png in Resources */,
 				491B1AC017DC23E200B9C07D /* AppIcon29x29@2x.png in Resources */,
 				CBB82F2C17DC7B40003ADD45 /* Randy98x98@2x.png in Resources */,
 				CBE363E817DC018B00C2EF89 /* InfoPlist.strings in Resources */,
@@ -367,6 +374,7 @@
 				CBB82F3617DC7B5D003ADD45 /* Andrew98x98@2x.png in Resources */,
 				491B1AC617DC23E200B9C07D /* AppIcon76x76@2x.png in Resources */,
 				CBB82F3217DC7B4F003ADD45 /* HomeIcon98x98.png in Resources */,
+				491B1B2917DCCDC800B9C07D /* Launch@2x.png in Resources */,
 				CBB82F3C17DC8B3D003ADD45 /* OfficeIcon98x98Highlighted.png in Resources */,
 				CBB82F2E17DC7B40003ADD45 /* Andrew98x98@2xhighlight.png in Resources */,
 				491B1ABF17DC23E200B9C07D /* AppIcon29x29.png in Resources */,
