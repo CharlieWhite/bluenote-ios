@@ -55,6 +55,7 @@
     [refreshControl addTarget:self action:@selector(loadNotes) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refreshControl;
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadDetailView) name:localReceived object:nil];
     
     [self loadNotes];
     AppDelegate *delegate = [UIApplication sharedApplication].delegate;
@@ -78,6 +79,20 @@
         DetailViewController *dvc = [[DetailViewController alloc] init];
         [self.navigationController pushViewController:dvc animated:YES];
     }
+}
+
+- (void) loadDetailView {
+    NSLog(@"load detail view");
+    Note *object = [[Note alloc] init];
+    object.message = @"Do the dishes! please.";
+    DetailViewController *dvc = [[DetailViewController alloc] init];
+    [dvc setDetailItem:object];
+    
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    DetailViewController *vc = [sb instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    [vc setDetailItem:object];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

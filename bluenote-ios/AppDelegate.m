@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "Note.h"
 #import "User.h"
+#import "DetailViewController.h"
+
+NSString *localReceived = @"localReceived";
 
 @implementation AppDelegate
 
@@ -84,7 +87,8 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
-    showDetail = YES;
+    [[NSNotificationCenter defaultCenter] postNotificationName:localReceived object:self];
+    
     NSLog(@"notif");
 }
 
