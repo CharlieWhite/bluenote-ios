@@ -38,6 +38,7 @@
                                                   UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"An Error Has Occurred" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                                                   [alertView show];
                                               }];
+    [self.refreshControl endRefreshing];
 }
 
 
@@ -49,6 +50,10 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc]
+                                        init];
+    [refreshControl addTarget:self action:@selector(loadNotes) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
     
     
     [self loadNotes];
@@ -60,7 +65,7 @@
         DetailViewController *dvc = [[DetailViewController alloc] init];
         [self.navigationController pushViewController:dvc animated:YES];
     }
-    //[self.refreshControl beginRefreshing];
+
 }
 
 - (void) viewDidAppear:(BOOL)animated {
@@ -81,6 +86,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 - (void)insertNewObject:(id)sender
 {

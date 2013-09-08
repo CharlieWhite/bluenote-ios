@@ -32,6 +32,7 @@
     [super viewDidLoad];
     UIBarButtonItem *noteButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(sendNote:)];
     self.navigationItem.rightBarButtonItem = noteButton;
+    noteTextField.layer.borderColor = [[UIColor blueColor] CGColor];
     // Do any additional setup after loading the view from its nib.
 }
 
