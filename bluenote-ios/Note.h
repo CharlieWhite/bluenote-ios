@@ -12,6 +12,7 @@
 
 @property (nonatomic, copy) NSNumber *noteId;
 @property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString *fromUserId;
 @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, copy) NSString *createdAt;
 
