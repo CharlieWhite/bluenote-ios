@@ -12,5 +12,6 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property BOOL showDetail;
 
 @end

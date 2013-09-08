@@ -15,7 +15,7 @@
 
 @implementation AddNoteViewController
 
-@synthesize noteTextField, image1, image2, image3;
+@synthesize noteTextField, image1, image2, image3, image4, image5;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -70,6 +70,17 @@
         image1.highlighted = NO;
         image2.highlighted = NO;
         image3.highlighted = YES;
+    }
+    if ([touch view] == image4) {
+        // Do something here
+        image4.highlighted = YES;
+        image5.highlighted = NO;
+
+    }
+    if ([touch view] == image5) {
+        // Do something here
+        image4.highlighted = NO;
+        image5.highlighted = YES;
     }
 }
 

@@ -15,12 +15,10 @@
 {
     
     CLLocationManager *_locationManager;
-    BOOL _enabled;
-    BOOL _notifyOnEntry;
-    BOOL _notifyOnExit;
-    BOOL _notifyOnDisplay;
 
 }
+
+@synthesize showDetail;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -85,6 +83,11 @@
     return YES;
 }
 
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+    showDetail = YES;
+    NSLog(@"notif");
+}
+
 // RANDO ADDED THIS FROM AIRLOCATE APP ///////////////////////
 
 - (void)locationManager:(CLLocationManager*)manager didStartMonitoringForRegion:(CLRegion *)region {
@@ -107,56 +110,17 @@
     
     if(state == CLRegionStateInside)
     {
-        NSLog(@"Monitoring IfSO");
-        
         notification.alertBody = @"WELCOME HOME!";
-        NSLog(@"Monitoring IfSO");
-        notification.fireDate = [[NSDate date] dateByAddingTimeInterval:2];
-        NSLog(@"Monitoring IfSO");
-        
-        
-        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
-        
-        NSLog(@"Monitoring IfSO");
-        
-        NSString *cancelTitle = @"Close";
-        NSString *showTitle = @"Show Me";
-        NSString *message = @"";
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"WELCOME HOME!"
-                                                            message:message
-                                                           delegate:self
-                                                  cancelButtonTitle:cancelTitle
-                                                  otherButtonTitles:showTitle, nil];
-        [alertView show];
-        
+        notification.soundName = UILocalNotificationDefaultSoundName;
+        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
         
     }
     else if(state == CLRegionStateOutside)
     {
-        NSLog(@"Monitoring IfNOT");
         
         notification.alertBody = @"YOU HAVE LEFT HOME";
-        if (notification == nil)
-            return;
-        notification.fireDate = [[NSDate date] dateByAddingTimeInterval:2];
-        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
-        
-        
-        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
-        
-        NSLog(@"Monitoring IfSO");
-        
-        NSString *cancelTitle = @"Close";
-        NSString *showTitle = @"Show";
-        NSString *message = @"alert";
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"YOU HAVE LEFT HOME"
-                                                            message:message
-                                                           delegate:self
-                                                  cancelButtonTitle:cancelTitle
-                                                  otherButtonTitles:showTitle, nil];
-        [alertView show];
-        
-        
+        notification.soundName = UILocalNotificationDefaultSoundName;
+        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
         
     }
     else
@@ -166,7 +130,6 @@
     
     // If the application is in the foreground, it will get a callback to application:didReceiveLocalNotification:.
     // If its not, iOS will display the notification to the user.
-    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
 }
 
 /////////////////////////////////

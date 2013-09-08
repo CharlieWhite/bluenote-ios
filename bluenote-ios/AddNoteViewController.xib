@@ -9,6 +9,8 @@
                 <outlet property="image1" destination="e5c-CF-YTP" id="ODq-Dk-HOc"/>
                 <outlet property="image2" destination="R0H-Ng-YoV" id="3TP-va-b5V"/>
                 <outlet property="image3" destination="Mlo-1v-e46" id="Wdx-eF-NoD"/>
+                <outlet property="image4" destination="o5Z-K0-0nH" id="Bvv-ih-0X9"/>
+                <outlet property="image5" destination="54u-d9-Gz2" id="hAQ-uj-NZj"/>
                 <outlet property="noteTextField" destination="eVu-GR-g3V" id="cmA-GG-1sg"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -22,11 +24,11 @@
                     <rect key="frame" x="0.0" y="73" width="99" height="100"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomeIcon98x98.png" translatesAutoresizingMaskIntoConstraints="NO" id="o5Z-K0-0nH">
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomeIcon98x98.png" highlightedImage="HomeIcon98x98Highlighted.png" translatesAutoresizingMaskIntoConstraints="NO" id="o5Z-K0-0nH">
                     <rect key="frame" x="0.0" y="208" width="77" height="75"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OfficeIcon98x98 (2).png" translatesAutoresizingMaskIntoConstraints="NO" id="54u-d9-Gz2">
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OfficeIcon98x98 (2).png" highlightedImage="OfficeIcon98x98Highlighted.png" translatesAutoresizingMaskIntoConstraints="NO" id="54u-d9-Gz2">
                     <rect key="frame" x="107" y="208" width="77" height="75"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
@@ -45,9 +47,10 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eVu-GR-g3V">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BlueNote" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eVu-GR-g3V">
                     <rect key="frame" x="11" y="305" width="294" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                     <connections>
@@ -65,9 +68,11 @@
         <image name="Andrew98x98.png" width="95" height="95"/>
         <image name="Andrew98x98@2xhighlight.png" width="198" height="198"/>
         <image name="HomeIcon98x98.png" width="98" height="98"/>
+        <image name="HomeIcon98x98Highlighted.png" width="98" height="98"/>
         <image name="Mila98x98.png" width="95" height="95"/>
         <image name="Mila98x98@2xhighlight.png" width="198" height="198"/>
         <image name="OfficeIcon98x98 (2).png" width="98" height="98"/>
+        <image name="OfficeIcon98x98Highlighted.png" width="98" height="98"/>
         <image name="Randy98x98.png" width="99" height="99"/>
         <image name="Randy98x98@2xhighlight.png" width="198" height="198"/>
     </resources>

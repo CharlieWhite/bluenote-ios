@@ -17,3 +17,4 @@
 
 
 #import <RestKit/RestKit.h>
+#define myAppDelegate (AppDelegate *)[[UIApplication sharedApplication] delegate]

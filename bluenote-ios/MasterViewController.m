@@ -11,6 +11,7 @@
 #import "DetailViewController.h"
 #import "AddNoteViewController.h"
 #import "Note.h"
+#import "AppDelegate.h"
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -51,12 +52,29 @@
     
     
     [self loadNotes];
+    AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+    
+    if (delegate.showDetail) {
+        delegate.showDetail = NO;
+        Note *object = [_objects lastObject];
+        DetailViewController *dvc = [[DetailViewController alloc] init];
+        [self.navigationController pushViewController:dvc animated:YES];
+    }
     //[self.refreshControl beginRefreshing];
 }
 
 - (void) viewDidAppear:(BOOL)animated {
     [self loadNotes];
+    
+    AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+    if (delegate.showDetail) {
+        delegate.showDetail = NO;
+        Note *object = [_objects lastObject];
+        DetailViewController *dvc = [[DetailViewController alloc] init];
+        [self.navigationController pushViewController:dvc animated:YES];
+    }
 }
+
 
 - (void)didReceiveMemoryWarning
 {
